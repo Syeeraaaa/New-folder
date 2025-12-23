@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>DATA MAHASISWA</title>
+</head>
+<body>
+   <div class="glass-container">
+    <h2>Data Mahasiswa</h2>
+    {% if nama %}
+    <p>Halo, {{ nama }}!</p>
+    {% endif %}
+
+    <form  method="post">
+        <div class="input-group">
+            <label>masukkan nama:</label>
+            <br>
+            <br>
+            <input type="text" name="nama" placeholder="Masukkan Nama" required>
+        </div>
+        <br>
+        <div class="input-group">
+            <label>Masukkan NIM:</label>
+            <br>
+            <br>
+            <input type="text" name="nim" placeholder="Masukkan NIM" required>
+        </div>
+        <br>
+        <div class="input-group">
+            <label>Masukkan kelas:</label>
+            <br>
+            <br>
+            <input type="text" name="kelas" placeholder="Masukkan Kelas" required>
+        </div>  
+        <br>
+        <button type="submit" class="submit">submit</button>
+    </form>
+    {% if data %}
+    <hr>
+
+    <h3>Data Mahasiswa</h3>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Kelas</th>
+        </tr>
+        <tr>
+            <td>{{ data.nama }}</td>
+            <td>{{ data.nim }}</td>
+            <td>{{ data.kelas }}</td>
+        </tr>
+    </table>
+    {% endif %}
+
+   </div>
+</body>
+</html>
