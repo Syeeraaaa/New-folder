@@ -1,0 +1,53 @@
+/* reset ringan */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+}
+
+/* container utama */
+.glass-container {
+    width: 350px;
+    background-color: white;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* judul */
+.glass-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* group input */
+.input-group label {
+    color: #555;
+    font-size: 14px;
+}
+
+/* input text */
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* tombol submit */
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* efek hover */
+.submit:hover {
+    background-color: #357abd;
+}
